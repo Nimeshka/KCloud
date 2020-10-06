@@ -1,4 +1,11 @@
-.vagrant/
-vendor
-code/storage/
-.env
+/vendor
+/.vagrant
+phpunit.xml
+/Homestead.yaml
+/Homestead.json
+/after.sh
+/aliases
+/mysqldump.sql.gz
+/mysql_backup
+/postgres_backup
+/user-customizations.sh
