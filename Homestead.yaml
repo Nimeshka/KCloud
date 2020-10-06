@@ -7,14 +7,14 @@ keys:
     - ~/.ssh/id_rsa
 folders:
     -
-        map: /Users/nimeshkasrimal/Projects/Laravel/project/code
+        map: /Users/nimeshkasrimal/Projects/Laravel/kcloud/code
         to: /home/vagrant/code
 sites:
     -
-        map: project.test
+        map: kcloud.local
         to: /home/vagrant/code/public
 databases:
-    - homestead
+    - kcloud
 features:
     -
         mariadb: false
@@ -23,5 +23,4 @@ features:
     -
         webdriver: false
 name: project
-hostname: project
- 
+hostname: kcloud
