@@ -1,1 +1,4 @@
 .vagrant/
+vendor
+code/storage/
+.env
