@@ -17,4 +17,11 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss'),
     ])
     .webpackConfig(require('./webpack.config'))
-    .copyDirectory('resources/images', 'public/images');;
+    .copyDirectory('resources/images', 'public/images');
+
+    mix.scripts([
+        'resources/js/init-alpine.js',
+        'resources/js/charts-lines.js',
+        'resources/js/charts-pie.js'
+    ], 'public/js/all.js');
+

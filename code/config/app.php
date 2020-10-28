@@ -230,5 +230,25 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    'landing_page' => [
+        'menu' => [
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_1_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_1_URL', ''),
+            ],
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_2_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_2_URL', ''),
+            ],
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_3_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_3_URL', ''),
+            ]
+        ],
+        'heading_1' => env('LANDING_PAGE_HEADING_1', ''),
+        'heading_2' => env('LANDING_PAGE_HEADING_2', ''),
+        'heading_3' => env('LANDING_PAGE_HEADING_3', ''),
+        
+    ]
 
 ];
