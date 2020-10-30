@@ -70,4 +70,9 @@ class User extends Authenticatable
     {
         return 'https://ui-avatars.com/api/?name=' . urlencode($this->first_name) . '&color=7F9CF5&background=EBF4FF';
     }
+
+    protected function profilePhotoDisk()
+    {
+        return 's3';
+    }
 }
