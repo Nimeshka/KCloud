@@ -9,6 +9,9 @@ folders:
     -
         map: /Users/nimeshkasrimal/Projects/Laravel/kcloud/code
         to: /home/vagrant/code
+    -
+        map: /Users/nimeshkasrimal/Projects/Laravel/kcloud/media-content
+        to: /home/vagrant/media-content
 sites:
     -
         map: kcloud.local
@@ -22,5 +25,11 @@ features:
         ohmyzsh: false
     -
         webdriver: false
+    -
+        minio: true
 name: project
 hostname: kcloud
+buckets:
+    - 
+        name: media-content-uploads
+        policy: public 

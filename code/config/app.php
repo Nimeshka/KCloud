@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -174,6 +174,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\FortifyServiceProvider::class,
+        App\Providers\JetstreamServiceProvider::class,
 
     ],
 
@@ -207,6 +209,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
+        'Http' => Illuminate\Support\Facades\Http::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
@@ -227,5 +230,25 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    'landing_page' => [
+        'menu' => [
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_1_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_1_URL', ''),
+            ],
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_2_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_2_URL', ''),
+            ],
+            [
+                'label' => env('LANDING_PAGE_MENU_ITEM_3_LABEL', ''),
+                'link' => env('LANDING_PAGE_MENU_ITEM_3_URL', ''),
+            ]
+        ],
+        'heading_1' => env('LANDING_PAGE_HEADING_1', ''),
+        'heading_2' => env('LANDING_PAGE_HEADING_2', ''),
+        'heading_3' => env('LANDING_PAGE_HEADING_3', ''),
+        
+    ]
 
 ];
